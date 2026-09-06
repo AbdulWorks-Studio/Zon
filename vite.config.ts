@@ -7,6 +7,7 @@ import { defineConfig } from "vite";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  base: '/zon/',                    // ← This is the only new line
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
